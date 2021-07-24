@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .models import Order
 import json 
 
 
@@ -19,7 +20,7 @@ def home(request):
 
 def report(request):
 	context = {
-		'json': json_object,
+		'json': Order.objects.all(),
 		'title': 'Metrics Report Data'
 
 	}
