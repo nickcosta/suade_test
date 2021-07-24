@@ -1,3 +1,4 @@
 from django.contrib import admin
+from .models import Order, Product, Promotion, ProductPromotion, VendorCommisions, OrderLine
 
-# Register your models here.
+admin.site.register(Order)
