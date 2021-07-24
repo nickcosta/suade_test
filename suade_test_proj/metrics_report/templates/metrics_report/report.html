@@ -1,10 +1,4 @@
 {% extends "metrics_report/base.html" %}
 {% block content %}
-	{% for post in posts %}
-		<h1>{{ post.firstname }}</h1>
-		<p>Name : {{ post.firstname }} {{ post.secondname }}</p>
-		<p>Title : {{ post.title }}</p>
-		<p>Ammount : {{ post.ammount }}</p>
-		<p>Total : {{ post.total }}</p>
-	{% endfor %}
+		<pre>{{ json }}</pre>
 {% endblock content %}
