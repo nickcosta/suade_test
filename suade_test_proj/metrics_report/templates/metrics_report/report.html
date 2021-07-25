@@ -1,4 +1,12 @@
 {% extends "metrics_report/base.html" %}
 {% block content %}
-		<pre>{{ json }}</pre>
+	<h1>Metrics Report for {{ date }}</h1>	
+	<p>The total number of customers that made an order that day = {{ customers }}</p>
+	<p>The total number of items sold that day = {{ items }}</p>
+	<p>The total amount of discount given that day = {{ discount }}</p>
+	<p>The average discount rate applied to the items sold that day = {{ avg_discount }}</p>
+	<p>The average order total for that day = {{ avg_ord_total }}</p>
+	<p>The total amount of commissions generated that day = {{ full_price_list }}</p>
+
 {% endblock content %}
+
